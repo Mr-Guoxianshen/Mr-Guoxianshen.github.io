@@ -15,7 +15,7 @@
   if(navigator.serviceWorker != null){
     navigator.serviceWorker.register('sw.js')
     .then(function(registartion){
-      console.log('支持sw:',registartion.scope)
+      alert('支持sw:',registartion.scope)
     })
   }
 </script>
