@@ -1,20 +1,20 @@
 {
-  "name": "一个PWA示例",
-  "short_name": "PWA示例",
-  "start_url": "/index.html",
+  "name": "news web app",
+  "short_name": "hello news",
+  "start_url": "./index.html",
+  "theme_color": "#00ff8b",
+  "background_color": "#00ff8b",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#3eaf7c",
   "icons": [
     {
-      "src": "./logo.png",
-      "sizes": "144x144",
+      "src": "./logo_2.png",
+      "sizes": "144X144",
       "type": "image/png"
     },
     {
       "src": "./logo.png",
-      "sizes": "72x72",
+      "sizes": "72X72",
       "type": "image/png"
     }
-  ],
+  ]
 }
