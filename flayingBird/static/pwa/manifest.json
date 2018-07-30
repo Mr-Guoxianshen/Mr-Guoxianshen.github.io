@@ -1,0 +1,20 @@
+{
+  "name": "news app",
+  "short_name": "news demo",
+  "start_url": "../../index.html",
+  "theme_color": "#00ff8b",
+  "background_color": "deepskyblue",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "../images/logo_2.png",
+      "sizes": "144X144",
+      "type": "image/png"
+    },
+    {
+      "src": "../images/logo.png",
+      "sizes": "72X72",
+      "type": "image/png"
+    }
+  ]
+}
