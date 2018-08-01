@@ -1,5 +1,5 @@
 // importScripts("workbox-sw.js");
-var cacheStorageKey = 'pwa-demo-3'
+var cacheStorageKey = 'pwa-demo-10'
 var cacheList=[
   '../../index.html',
   '../css/reset.css',
@@ -50,6 +50,7 @@ self.addEventListener('activate',function(e){
         }).map(cacheNames => {
           return caches.delete(cacheNames)
         })
+        console.log(cacheNames)
       )
     }).then(() => {
       return self.clients.claim()
