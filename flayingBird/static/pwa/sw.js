@@ -1,4 +1,3 @@
-importScripts("workbox-sw.js");
 var cacheStorageKey = 'pwa-demo-01'
 var cacheList=[
   '../../index.html',
