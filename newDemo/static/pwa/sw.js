@@ -1,5 +1,4 @@
-// importScripts("workbox-sw.js");
-var cacheStorageKey = 'pwa-demo-2'
+var cacheStorageKey = 'pwa-demo-01'
 var cacheList=[
   '../../index.html',
   '../css/reset.css',
@@ -22,20 +21,7 @@ self.addEventListener('fetch',function(e){
       if(response != null){
         return response
       }
-      let requestToCache = e.request.clone();
-      return fetch(requestToCache).then(response => {
-        // 出错
-        if(!response || response.status !==200){
-          return response;
-        }
-        // response ok
-        let responseToCache = response.clone();
-        caches.open(cacheStorageKey).then(cache => {
-          // 添加到缓存列表
-          cache.put(requestToCache,responseToCache);
-        });
-        return response;
-      });
+      return fetch(e.request.url)
     })
   )
 })
