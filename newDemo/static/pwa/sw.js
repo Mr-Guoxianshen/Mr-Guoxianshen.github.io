@@ -1,4 +1,4 @@
-var cacheStorageKey = 'pwa-demo-02'
+var cacheStorageKey = 'pwa-demo-03'
 var cacheList=[
   '../../index.html',
   '../css/reset.css',
