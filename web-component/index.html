@@ -1,0 +1,28 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> WEB-TEST </title> 
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="import" id="page1" href="page1.html">
+		<link rel="import" id="page2" href="page2.html">
+	</head> 
+	<body> 
+		<!-- 内容 -->
+		<ul>
+			<li><a href="javascript:;">page1</a></li>
+			<li><a href="javascript:;">page2</a></li>
+		</ul>
+		<script type="text/javascript">
+			$('a').click((e) => {
+				console.log(e.target);
+			})
+		</script>
+		<script type="text/javascript">
+            document.write(page1.import.body.innerHTML);
+        </script>
+        你好呀！本页面写入内容
+        <script type="text/javascript">
+            document.write(page2.import.body.innerHTML);
+        </script>
+	</body> 
+</html>
