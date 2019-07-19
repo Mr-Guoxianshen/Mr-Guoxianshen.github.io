@@ -9,20 +9,24 @@
 	<body> 
 		<!-- 内容 -->
 		<ul>
-			<li><a href="javascript:;">page1</a></li>
-			<li><a href="javascript:;">page2</a></li>
+			<li><a id="page1" href="javascript:;">page1</a></li>
+			<li><a id="page2" href="javascript:;">page2</a></li>
 		</ul>
 		<script type="text/javascript">
 			$('a').click((e) => {
-				console.log(e.target);
+				console.log(e.target.id);
+				let id = e.target.id;
+				document.write(id.import.body.innerHTML);
 			})
 		</script>
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
             document.write(page1.import.body.innerHTML);
-        </script>
-        你好呀！本页面写入内容
-        <script type="text/javascript">
+        </script> -->
+        <div>
+        	你好呀！本页面写入内容
+        </div>
+        <!-- <script type="text/javascript">
             document.write(page2.import.body.innerHTML);
-        </script>
+        </script> -->
 	</body> 
 </html>
