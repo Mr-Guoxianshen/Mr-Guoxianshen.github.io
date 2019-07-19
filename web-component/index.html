@@ -16,7 +16,12 @@
 			$('a').click((e) => {
 				console.log(e.target.id);
 				let id = e.target.id;
-				document.write(id.import.body.innerHTML);
+				if (id == 'page1') {
+					document.write(page1.import.body.innerHTML);
+				}
+				if (id == 'page2') {
+					document.write(page2.import.body.innerHTML);
+				}
 			})
 		</script>
 		<!-- <script type="text/javascript">
